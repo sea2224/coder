@@ -1,0 +1,73 @@
+/* boosters */
+.bt2 {
+    color: $color-primario;
+    font-size: 5px;
+    font-family: $fuente-primaria;
+    display: grid;
+    grid-template-columns: 1fr, 1fr; }
+  
+  .bt3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    }
+  
+  .bold {
+    width: 50%;
+    text-align: center;
+    font-size: 13px; 
+    
+  }
+    
+  
+  .bold strong {
+    font-size: $medida+10;
+    font-family: "berlin", $fuente-primaria; }
+  
+  .fondop1 img {
+    display: none; }
+  
+  .bt1 {
+    width: 50%;
+    padding: 5px; }
+  
+  .fondop2 {
+    display: none; }
+  
+  .fondop2 img {
+    width: 40%;
+    padding: 5px; }
+  
+  /* Media Queri */
+  @media (min-width: 768px) {
+    .seccion {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+    .bt2 {
+      display: flex;
+      flex-direction: column;
+      width:25%;
+    
+    }
+    .bt3 {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start; }
+    .bold {
+      text-align: start; }
+    .fondop1 img {
+      display: flex;
+      width: 70%;
+      padding: 5px; }
+    .bt1 {
+      width: 40%;
+      padding: 5px; }
+    .fondop2 {
+      display: flex;
+      justify-content: end; }
+    .fondop2 img {
+      display: flex;
+      width: 50%;
+      padding: 5px; } }

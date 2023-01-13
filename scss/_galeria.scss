@@ -1,0 +1,204 @@
+/* Galeria */   
+.galery {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-auto-flow: dense;
+  }
+
+  .galery {
+    img:hover {
+        filter: opacity(0.9);
+        transform: scale(1.05);
+      }
+  }
+
+  .galery {
+    img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+        position: relative;
+        height: 100%;
+        width: 100%;
+    
+        transition-duration: 0.5s;
+      }
+  }
+
+.plus {
+  grid-column: span 2;
+}
+
+.img-1 {
+  @include animacion (aparicionV, 1s, ease-in-out);
+}
+
+.img-2 {
+  @include animacion (aparicionH, 1s, ease-in-out);
+}
+
+.img-3 {
+  @include animacion (aparicionH, 1s, ease-in-out);
+}
+
+.img-4 {
+  @include animacion (aparicionV, 1s, ease-in-out);
+}
+
+.img-5 {
+  @include animacion (aparicionV, 1s, ease-in-out);
+}
+
+.img-6 {
+  @include animacion (aparicionH, 1s, ease-in-out);
+}
+
+.img-7 {
+  @include animacion (aparicionH, 1s, ease-in-out);
+}
+
+.img-8 {
+  @include animacion (aparicionH, 1s, ease-in-out);
+}
+
+.img-9 {
+  @include animacion (aparicionH, 1s, ease-in-out);
+}
+
+.img-10 {
+  @include animacion (aparicionH, 1s, ease-in-out);
+}
+
+.img-11 {
+  @include animacion (aparicionH, 1s, ease-in-out);
+}
+
+.img-12 {
+  @include animacion (aparicionH, 1s, ease-in-out);
+}
+
+.img-13 {
+  @include animacion (aparicionH, 1s, ease-in-out);
+}
+
+.img-14 {
+  @include animacion (aparicionH, 1s, ease-in-out);
+}
+
+.img-15 {
+  @include animacion (aparicionH, 1s, ease-in-out);
+}
+
+.img-16 {
+  @include animacion (aparicionH, 1s, ease-in-out);
+}
+
+
+/* Media Queri */
+@media (min-width: 768px) 
+{   
+
+.galery {
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-areas: 
+    "img-1 img-1 img-2 img-3"
+    "img-1 img-1 img-6 img-6"
+    "img-4 img-5 img-6 img-6"
+    "img-7 img-8 img-9 img-10"
+    "img-11 img-12 img-13 img-14"
+    "img-15 img-15 img-16 img-16"
+    "img-15 img-15 img-16 img-16"
+    ;
+  }
+
+  .img-1 {
+    grid-area: img-1;
+    @include animacion (aparicionV, 1s, ease-in-out);
+  }
+
+  .img-2 {
+    grid-area: img-2;
+    @include animacion (aparicionH2, 0.5s, ease-in-out)
+  }
+
+  .img-3 {
+    grid-area: img-3;
+    @include animacion (aparicionV, 1s, ease-in-out)
+  }
+
+  .img-4 {
+    grid-area: img-4;
+    @include animacion (aparicionH, 1s, ease-in-out)
+  }
+
+  .img-5 {
+    grid-area: img-5;
+    @include animacion (aparicionH2, 0.5s, ease-in-out)
+  }
+
+  .img-6 {
+    grid-area: img-6;
+    @include animacion (aparicionH2, 1s, ease-in-out)
+  }
+
+  .img-7 {
+    grid-area: img-7;
+    @include animacion (aparicionH, 1s, ease-in-out)
+  }
+
+  .img-8 {
+    grid-area: img-8;
+    @include animacion (aparicionH2, 1s, ease-in-out)
+  }
+
+  .img-9 {
+    grid-area: img-9;
+    @include animacion (aparicionH, 1s, ease-in-out)
+  }
+
+  .img-10 {
+    grid-area: img-10;
+    @include animacion (aparicionH2, 1s, ease-in-out)
+  }
+
+  .img-11 {
+    grid-area: img-11;
+    @include animacion (aparicionH2, 1s, ease-in-out)
+  }
+
+  .img-12 {
+    grid-area: img-12;
+    @include animacion (aparicionH, 1s, ease-in-out)
+  }
+
+  .img-13 {
+    grid-area: img-13;
+    @include animacion (aparicionH2, 1s, ease-in-out)
+  }
+
+  .img-14 {
+    grid-area: img-14;
+    @include animacion (aparicionH, 1s, ease-in-out)
+  }
+
+  .img-15 {
+    grid-area: img-15;
+    @include animacion (aparicionV2, 1s, ease-in-out)
+  }
+
+  .img-16 {
+    grid-area: img-16;
+    @include animacion (aparicionH, 0.5s, ease-in-out)
+  }
+}

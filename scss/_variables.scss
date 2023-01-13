@@ -1,0 +1,14 @@
+$color-primario: #000000;
+$fuente-primaria: Verdana, Tahoma, sans-serif;
+$medida: 10px;
+
+@mixin size ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin animacion ($name, $duration, $timing) {
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-timing-function: $timing;
+}

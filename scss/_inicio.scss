@@ -1,0 +1,107 @@
+ /* Inicio */
+ .bodyIndex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (3, auto);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.logo {
+    width: 70%;
+
+    animation-name: aparicionV;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
+.logo:hover {
+    filter: opacity(0.9);
+    transform: scale(1.05);
+  }
+
+.introduccion {
+    width: 80%;
+    padding: 10px;
+    margin: 20px;
+    background-color:$color-primario;
+    border-radius: 10px;
+}
+
+.titulo {
+    color: #FFFFFF;
+    font-family: 'berlin', $fuente-primaria;
+    font-size: $medida+30;
+    text-align: center;
+    box-shadow: inset 0 0 0 0 #54b3d67e;
+    color: #b2eaffcb;
+    padding: 0 5px;
+    margin: 0 -5px;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.titulo:hover {
+    color: #fff;
+    box-shadow: inset 400px 0 0 0 #54b3d67e;
+  }
+
+.contenido {
+    color:#FFFFFF;
+    font-family: $fuente-primaria;
+    font-size: $medida+5;
+    text-align: center;
+}
+
+
+/* Media Queri */
+@media (min-width: 600px) 
+{
+    .titulo:hover {
+        box-shadow: inset 500px 0 0 0 #54b3d67e;
+    }
+}
+
+@media (min-width: 768px) 
+{   
+
+header {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo {
+    width: 50%;
+
+    animation-name: aparicionH;
+}
+
+.introduccion {
+    width: 90%;
+    background-color: $color-primario;
+    padding: 5px 20px;
+}
+
+.titulo {
+    text-align: start;
+}
+
+.titulo:hover {
+    box-shadow: inset 275px 0 0 0 #54b3d67e;
+  }
+
+.contenido {
+    font-size: $medida+2;
+    font-weight: bold;
+    text-align: justify;
+}
+}

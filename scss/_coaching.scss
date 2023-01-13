@@ -1,0 +1,36 @@
+/* coaching */
+.ch2 {
+    color: #FFFFFF;
+    font-size: $medida+5;
+    font-family: $fuente-primaria;
+    display: flex;
+    flex-direction: column; 
+    }
+   
+  .ElSwagger {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center; 
+  }
+    
+  
+  .seccionA {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  
+  /* Media Queri */
+  @media (min-width: 768px) {
+    .ch2 {
+      color: $color-primario;
+      font-size: 5px;
+      font-family: $fuente-primaria;
+      display: flex;
+      flex-direction: row; }
+    .ElSwagger {
+      flex-direction: row;
+      justify-content: start;
+      align-items: start; } }
