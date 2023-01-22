@@ -82,7 +82,7 @@ nav ul li {
     display: none;
   }
   .navbar-collapse {
-    background-color: rgba(136, 136, 136, 0.6);
+    background-color: rgba(84, 84, 84, 0.6);
   }
 }
 /* Fondo de página */
@@ -136,12 +136,12 @@ header {
   width: 80%;
   padding: 10px;
   margin: 20px;
-  background-color: #000000;
+  background-color: #e8e8e8;
   border-radius: 10px;
 }
 
 .titulo {
-  color: #FFFFFF;
+  color: #9d9999;
   font-family: "berlin", Verdana, Tahoma, sans-serif;
   font-size: 40px;
   text-align: center;
@@ -153,12 +153,12 @@ header {
 }
 
 .titulo:hover {
-  color: #FFFFFF;
+  color: #6f6f6f;
   box-shadow: inset 400px 0 0 0 rgba(84, 179, 214, 0.4941176471);
 }
 
 .contenido {
-  color: #FFFFFF;
+  color: #919191;
   font-family: Verdana, Tahoma, sans-serif;
   font-size: 15px;
   text-align: center;
@@ -202,7 +202,7 @@ header {
 }
 /* coaching */
 .ch2 {
-  color: #FFFFFF;
+  color: #040000;
   font-size: 15px;
   font-family: Verdana, Tahoma, sans-serif;
   display: flex;
