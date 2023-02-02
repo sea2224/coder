@@ -3,13 +3,13 @@
     padding: 0;
     }
 
-@import 'variables';
-@import 'navbar';
-@import 'fondos';
-@import 'inicio';
-@import 'coaching';
-@import 'boost';
-@import 'galeria';
-@import 'contacto';
-@import 'pie';
-@import 'animaciones';
+@use 'variables';
+@use 'navbar';
+@use 'fondos';
+@use 'inicio';
+@use 'coaching';
+@use 'boost';
+@use 'galeria';
+@use 'contacto';
+@use 'pie';
+@use 'animaciones';
